@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WOODARD CONSTRUCTION LLC // 2531 VILLANOVA DR.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        paper: '#F4F4F0',
+                        ink: '#111111',
+                        safety: '#FF4F00', // Architectural / Blueprint Orange
+                        concrete: '#E5E5DF',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #F4F4F0;
+            color: #111111;
+        }
+        .grid-border {
+            border-color: #111111;
+        }
+        /* Subtle architectural dot grid */
+        .bg-dot-grid {
+            background-image: radial-gradient(#111111 0.75px, transparent 0.75px);
+            background-size: 20px 20px;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-safety selection:text-white">
+
+    <!-- Top Brutalist / Architectural Ticker Bar -->
+    <div class="bg-ink text-paper font-mono text-[11px] uppercase tracking-widest py-2 px-4 border-b border-ink flex justify-between items-center">
+        <div class="flex items-center space-x-3">
+            <span class="inline-block w-2 h-2 bg-safety"></span>
+            <span>OPEN-SOURCE DEVELOPMENT LOG // FAIRFAX COUNTY, VA</span>
+        </div>
+        <div class="hidden sm:block text-neutral-400">
+            VA CLASS A CONTRACTOR // PARCEL: 2531 VILLANOVA DR
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="sticky top-0 z-50 bg-paper/95 backdrop-blur-sm border-b border-ink">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="#" class="font-mono font-bold text-sm sm:text-base tracking-tight uppercase flex items-center gap-2">
+                    <span class="bg-ink text-paper px-2 py-0.5">WC</span>
+                    <span>WOODARD CONSTRUCTION LLC</span>
+                </a>
+
+                <div class="hidden md:flex items-center space-x-8 font-mono text-xs uppercase tracking-wider">
+                    <a href="#project" class="hover:text-safety transition">[01] THE PROJECT</a>
+                    <a href="#budget" class="hover:text-safety transition">[02] OPEN BUDGET</a>
+                    <a href="#progress" class="hover:text-safety transition">[03] FIELD LOGS</a>
+                    <a href="#manifesto" class="hover:text-safety transition">[04] ABOUT & WHY</a>
+                </div>
+
+                <a href="#manifesto" class="font-mono text-xs uppercase bg-ink text-paper hover:bg-safety transition px-3 py-2 font-bold">
+                    OPEN DATA &rarr;
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero / Case Study Header (Guerrilla Dev Architectural Grid Style) -->
+    <header id="project" class="border-b border-ink">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12">
+            
+            <!-- Left Main Title Block -->
+            <div class="lg:col-span-8 p-6 sm:p-12 lg:p-16 border-b lg:border-b-0 lg:border-r border-ink flex flex-col justify-between bg-dot-grid">
+                <div>
+                    <div class="inline-block font-mono text-xs uppercase tracking-widest bg-paper border border-ink px-3 py-1 mb-6">
+                        CASE STUDY // ACTIVE BUILD 2025–2027
+                    </div>
+                    <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight uppercase leading-[0.95] mb-6 bg-paper/90 inline-block">
+                        2531 VILLANOVA DR.
+                    </h1>
+                    <p class="text-lg sm:text-xl text-neutral-800 max-w-2xl leading-relaxed font-normal bg-paper/95 p-2 -ml-2">
+                        A complete, unvarnished field log of horizontal land development, utility undergrounding, foundation drainage engineering, and residential construction in Dunn Loring Woods, Vienna, VA.
+                    </p>
+                </div>
+
+                <div class="mt-10 pt-6 border-t border-ink flex flex-wrap gap-3 font-mono text-xs uppercase bg-paper/95">
+                    <span class="border border-ink px-2.5 py-1 bg-concrete">#INFILL-DEVELOPMENT</span>
+                    <span class="border border-ink px-2.5 py-1 bg-concrete">#CIVIL-ENGINEERING</span>
+                    <span class="border border-ink px-2.5 py-1 bg-concrete">#OPEN-LEDGER</span>
+                    <span class="border border-ink px-2.5 py-1 bg-concrete">#NON-HOA-LAND</span>
+                </div>
+            </div>
+
+            <!-- Right Project Spec Sheet -->
+            <div class="lg:col-span-4 bg-paper flex flex-col justify-between font-mono text-xs">
+                <div class="divide-y divide-ink">
+                    <div class="p-5 flex justify-between items-center bg-ink text-paper">
+                        <span class="font-bold tracking-widest uppercase">PROJECT DOSSIER</span>
+                        <span class="text-safety">STATUS: ACTIVE</span>
+                    </div>
+                    <div class="p-5 flex justify-between">
+                        <span class="text-neutral-500 uppercase">LOCATION</span>
+                        <span class="font-bold text-right">VIENNA, VA 22180</span>
+                    </div>
+                    <div class="p-5 flex justify-between">
+                        <span class="text-neutral-500 uppercase">NEIGHBORHOOD</span>
+                        <span class="font-bold text-right">DUNN LORING WOODS</span>
+                    </div>
+                    <div class="p-5 flex justify-between">
+                        <span class="text-neutral-500 uppercase">LOT AREA</span>
+                        <span class="font-bold text-right">~10,000 SQ. FT.</span>
+                    </div>
+                    <div class="p-5 flex justify-between">
+                        <span class="text-neutral-500 uppercase">ZONING / GOVERNANCE</span>
+                        <span class="font-bold text-right">FAIRFAX R-4 // NO HOA</span>
+                    </div>
+                    <div class="p-5 flex justify-between">
+                        <span class="text-neutral-500 uppercase">GENERAL CONTRACTOR</span>
+                        <span class="font-bold text-right">WOODARD CONSTRUCTION</span>
+                    </div>
+                    <div class="p-5 flex justify-between">
+                        <span class="text-neutral-500 uppercase">LICENSE CREDENTIAL</span>
+                        <span class="font-bold text-right">VA CLASS A RESIDENTIAL</span>
+                    </div>
+                </div>
+                <div class="p-5 bg-concrete border-t border-ink">
+                    <p class="text-[11px] leading-relaxed text-neutral-700">
+                        * Every line item, subcontractor scope, and site decision is published here to demystify residential construction costs and execution.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Section 02: Open-Source Budget & Pro-Forma Ledger -->
+    <section id="budget" class="border-b border-ink py-16 sm:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Section Header -->
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 pb-6 border-b border-ink gap-4">
+                <div>
+                    <span class="font-mono text-xs uppercase tracking-widest text-safety font-bold">[02] FINANCIAL TRANSPARENCY</span>
+                    <h2 class="text-3xl sm:text-5xl font-extrabold uppercase tracking-tight mt-1">
+                        THE OPEN BUDGET LEDGER
+                    </h2>
+                </div>
+                <p class="font-mono text-xs text-neutral-600 max-w-md">
+                    Real-world construction accounting for Northern Virginia. Track allocated budgets vs. actual committed costs across site work, utilities, and structural execution.
+                </p>
+            </div>
+
+            <!-- Top KPI Summary Cards -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 border border-ink mb-10 divide-y sm:divide-y-0 sm:divide-x divide-ink bg-white">
+                <div class="p-6">
+                    <span class="font-mono text-[11px] uppercase text-neutral-500 block">TOTAL IMPROVEMENT BUDGET</span>
+                    <span id="kpi-budget" class="font-mono text-2xl sm:text-3xl font-bold mt-2 block">$185,000</span>
+                    <span class="font-mono text-[11px] text-neutral-500 mt-1 block">HARD + SOFT COSTS (EXCL. LAND)</span>
+                </div>
+                <div class="p-6">
+                    <span class="font-mono text-[11px] uppercase text-neutral-500 block">ACTUAL SPENT TO DATE</span>
+                    <span id="kpi-spent" class="font-mono text-2xl sm:text-3xl font-bold mt-2 block text-safety">$68,450</span>
+                    <span class="font-mono text-[11px] text-neutral-500 mt-1 block">37.0% OF ALLOCATION DEPLOYED</span>
+                </div>
+                <div class="p-6">
+                    <span class="font-mono text-[11px] uppercase text-neutral-500 block">REMAINING RESERVE</span>
+                    <span id="kpi-remaining" class="font-mono text-2xl sm:text-3xl font-bold mt-2 block">$116,550</span>
+                    <span class="font-mono text-[11px] text-neutral-500 mt-1 block">INCLUDES 10% CONTINGENCY</span>
+                </div>
+                <div class="p-6 bg-concrete">
+                    <span class="font-mono text-[11px] uppercase text-neutral-600 block">VARIANCE STATUS</span>
+                    <span class="font-mono text-2xl sm:text-3xl font-bold mt-2 block text-emerald-700">-$1,850</span>
+                    <span class="font-mono text-[11px] text-neutral-600 mt-1 block">UNDER BUDGET ON COMPLETED PHASES</span>
+                </div>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="flex flex-wrap gap-2 mb-6 font-mono text-xs">
+                <button onclick="filterBudget('ALL')" class="budget-filter-btn bg-ink text-paper px-3 py-1.5 border border-ink uppercase cursor-pointer">ALL DIVISIONS</button>
+                <button onclick="filterBudget('CIVIL')" class="budget-filter-btn bg-paper text-ink hover:bg-concrete px-3 py-1.5 border border-ink uppercase cursor-pointer">SITE & CIVIL</button>
+                <button onclick="filterBudget('MEP')" class="budget-filter-btn bg-paper text-ink hover:bg-concrete px-3 py-1.5 border border-ink uppercase cursor-pointer">UTILITIES & MEP</button>
+                <button onclick="filterBudget('STRUCTURAL')" class="budget-filter-btn bg-paper text-ink hover:bg-concrete px-3 py-1.5 border border-ink uppercase cursor-pointer">STRUCTURAL & INTERIOR</button>
+                <button onclick="filterBudget('SOFT')" class="budget-filter-btn bg-paper text-ink hover:bg-concrete px-3 py-1.5 border border-ink uppercase cursor-pointer">PERMITS & SOFT COSTS</button>
+            </div>
+
+            <!-- Interactive Ledger Table -->
+            <div class="overflow-x-auto border border-ink bg-white">
+                <table class="w-full text-left border-collapse font-mono text-xs">
+                    <thead>
+                        <tr class="bg-ink text-paper uppercase border-b border-ink">
+                            <th class="p-4">CSI / CODE</th>
+                            <th class="p-4">SCOPE OF WORK & NOTES</th>
+                            <th class="p-4">DIVISION</th>
+                            <th class="p-4 text-right">BUDGETED</th>
+                            <th class="p-4 text-right">ACTUAL</th>
+                            <th class="p-4 text-center">STATUS</th>
+                        </tr>
+                    </thead>
+                    <tbody id="budget-table-body" class="divide-y divide-ink">
+                        <tr class="budget-row hover:bg-paper" data-category="SOFT">
+                            <td class="p-4 font-bold">01-100</td>
+                            <td class="p-4">
+                                <span class="font-bold block text-sm font-sans">Boundary Survey, Soil & Zoning Engineering</span>
+                                <span class="text-neutral-500">Plat verification, Fairfax County setback & lot coverage analysis.</span>
+                            </td>
+                            <td class="p-4"><span class="border border-ink px-2 py-0.5 bg-paper">SOFT</span></td>
+                            <td class="p-4 text-right">$6,500</td>
+                            <td class="p-4 text-right font-bold">$6,200</td>
+                            <td class="p-4 text-center"><span class="bg-emerald-100 text-emerald-900 border border-emerald-800 px-2 py-0.5">PAID</span></td>
+                        </tr>
+                        <tr class="budget-row hover:bg-paper" data-category="MEP">
+                            <td class="p-4 font-bold">02-300</td>
+                            <td class="p-4">
+                                <span class="font-bold block text-sm font-sans">Overhead-to-Underground Utility Conversion</span>
+                                <span class="text-neutral-500">Trenching, Schedule 40/80 PVC conduit, Dominion Energy & fiber lateral burial.</span>
+                            </td>
+                            <td class="p-4"><span class="border border-ink px-2 py-0.5 bg-paper">MEP</span></td>
+                            <td class="p-4 text-right">$14,000</td>
+                            <td class="p-4 text-right font-bold">$13,150</td>
+                            <td class="p-4 text-center"><span class="bg-emerald-100 text-emerald-900 border border-emerald-800 px-2 py-0.5">PAID</span></td>
+                        </tr>
+                        <tr class="budget-row hover:bg-paper" data-category="CIVIL">
+                            <td class="p-4 font-bold">02-600</td>
+                            <td class="p-4">
+                                <span class="font-bold block text-sm font-sans">Foundation Drainage & Positive Lot Grading</span>
+                                <span class="text-neutral-500">Perimeter French drain, rigid SDR-35 downspout extensions, swale re-contouring.</span>
+                            </td>
+                            <td class="p-4"><span class="border border-ink px-2 py-0.5 bg-paper">CIVIL</span></td>
+                            <td class="p-4 text-right">$18,500</td>
+                            <td class="p-4 text-right font-bold">$17,800</td>
+                            <td class="p-4 text-center"><span class="bg-amber-100 text-amber-900 border border-amber-800 px-2 py-0.5">ACTIVE</span></td>
+                        </tr>
+                        <tr class="budget-row hover:bg-paper" data-category="MEP">
+                            <td class="p-4 font-bold">16-400</td>
+                            <td class="p-4">
+                                <span class="font-bold block text-sm font-sans">200A Service Panel Upgrade & Level 2 EV Prep</span>
+                                <span class="text-neutral-500">Heavy-up panel, dedicated 60A EV circuit, structured Cat6A low-voltage backbone.</span>
+                            </td>
+                            <td class="p-4"><span class="border border-ink px-2 py-0.5 bg-paper">MEP</span></td>
+                            <td class="p-4 text-right">$12,000</td>
+                            <td class="p-4 text-right font-bold">$11,300</td>
+                            <td class="p-4 text-center"><span class="bg-amber-100 text-amber-900 border border-amber-800 px-2 py-0.5">ACTIVE</span></td>
+                        </tr>
+                        <tr class="budget-row hover:bg-paper" data-category="STRUCTURAL">
+                            <td class="p-4 font-bold">06-100</td>
+                            <td class="p-4">
+                                <span class="font-bold block text-sm font-sans">Interior Structural Reconfiguration & Framing</span>
+                                <span class="text-neutral-500">LVL beam installation, subfloor stiffening, dual-zone workspace framing.</span>
+                            </td>
+                            <td class="p-4"><span class="border border-ink px-2 py-0.5 bg-paper">STRUCTURAL</span></td>
+                            <td class="p-4 text-right">$48,000</td>
+                            <td class="p-4 text-right font-bold">$20,000</td>
+                            <td class="p-4 text-center"><span class="bg-amber-100 text-amber-900 border border-amber-800 px-2 py-0.5">ACTIVE</span></td>
+                        </tr>
+                        <tr class="budget-row hover:bg-paper" data-category="STRUCTURAL">
+                            <td class="p-4 font-bold">09-900</td>
+                            <td class="p-4">
+                                <span class="font-bold block text-sm font-sans">Architectural Finishes, Millwork & Insulation</span>
+                                <span class="text-neutral-500">Closed-cell spray foam, drywall, custom cabinetry, hardwood flooring.</span>
+                            </td>
+                            <td class="p-4"><span class="border border-ink px-2 py-0.5 bg-paper">STRUCTURAL</span></td>
+                            <td class="p-4 text-right">$54,000</td>
+                            <td class="p-4 text-right text-neutral-400">$0</td>
+                            <td class="p-4 text-center"><span class="bg-neutral-200 text-neutral-700 border border-neutral-500 px-2 py-0.5">QUEUED</span></td>
+                        </tr>
+                        <tr class="budget-row hover:bg-paper" data-category="CIVIL">
+                            <td class="p-4 font-bold">02-900</td>
+                            <td class="p-4">
+                                <span class="font-bold block text-sm font-sans">Hardscaping, Driveway & Turf Restoration</span>
+                                <span class="text-neutral-500">Permeable pavers, topsoil amendment, core aeration & fescue establishment.</span>
+                            </td>
+                            <td class="p-4"><span class="border border-ink px-2 py-0.5 bg-paper">CIVIL</span></td>
+                            <td class="p-4 text-right">$15,000</td>
+                            <td class="p-4 text-right text-neutral-400">$0</td>
+                            <td class="p-4 text-center"><span class="bg-neutral-200 text-neutral-700 border border-neutral-500 px-2 py-0.5">QUEUED</span></td>
+                        </tr>
+                        <tr class="budget-row hover:bg-paper" data-category="SOFT">
+                            <td class="p-4 font-bold">99-000</td>
+                            <td class="p-4">
+                                <span class="font-bold block text-sm font-sans">Unallocated Contingency Reserve (10%)</span>
+                                <span class="text-neutral-500">Held for unforeseen subsurface rock, utility conflicts, or material escalation.</span>
+                            </td>
+                            <td class="p-4"><span class="border border-ink px-2 py-0.5 bg-paper">SOFT</span></td>
+                            <td class="p-4 text-right">$17,000</td>
+                            <td class="p-4 text-right text-neutral-400">$0</td>
+                            <td class="p-4 text-center"><span class="bg-neutral-200 text-neutral-700 border border-neutral-500 px-2 py-0.5">HELD</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="font-mono text-[11px] text-neutral-500 mt-3">
+                * Edit the numbers directly inside the HTML table rows as invoices clear. All figures reflect direct trade partner and material costs.
+            </p>
+        </div>
+    </section>
+
+    <!-- Section 03: Field Documentation & Progress Gallery -->
+    <section id="progress" class="border-b border-ink py-16 sm:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 pb-6 border-b border-ink gap-4">
+                <div>
+                    <span class="font-mono text-xs uppercase tracking-widest text-safety font-bold">[03] VISUAL EVIDENCE</span>
+                    <h2 class="text-3xl sm:text-5xl font-extrabold uppercase tracking-tight mt-1">
+                        CONSTRUCTION PROGRESS LOG
+                    </h2>
+                </div>
+                <p class="font-mono text-xs text-neutral-600 max-w-md">
+                    Chronological site photography. Click any plate to inspect full-resolution field notes and technical details.
+                </p>
+            </div>
+
+            <!-- Guerrilla-Style Architectural Project Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Card 01 -->
+                <article onclick="openModal('LOG 001 // UTILITY TRENCHING', 'Q3 2026 — Excavated 36-inch deep utility trench from the street transformer/pedestal to the structure. Installed dual Schedule 40 PVC conduits for electrical and fiber-optic service laterals, permanently eliminating overhead wire clutter.', 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1200&q=80')" class="group border border-ink bg-paper cursor-pointer flex flex-col justify-between transition hover:-translate-y-1 hover:shadow-[6px_6px_0px_0px_#111111]">
+                    <div>
+                        <div class="p-3 border-b border-ink flex justify-between items-center font-mono text-[11px] bg-concrete">
+                            <span class="font-bold">PLATE 001 // UTILITIES</span>
+                            <span>Q3 2026</span>
+                        </div>
+                        <div class="aspect-[4/3] overflow-hidden border-b border-ink bg-ink">
+                            <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=800&q=80" alt="Underground utility trenching" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-bold text-lg uppercase tracking-tight mb-2">Underground Service Lateral Conversion</h3>
+                            <p class="text-sm text-neutral-700 leading-relaxed">
+                                Trenching and conduit installation to bury overhead electrical and telecom lines across the 10,000 sq. ft. lot.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-5 py-3 border-t border-ink font-mono text-xs flex justify-between items-center group-hover:bg-ink group-hover:text-paper transition">
+                        <span>INSPECT FIELD PLATE</span>
+                        <span>&rarr;</span>
+                    </div>
+                </article>
+
+                <!-- Card 02 -->
+                <article onclick="openModal('LOG 002 // FOUNDATION DRAINAGE', 'Q4 2026 — Re-graded perimeter soils to achieve a minimum 6-inch fall over the first 10 feet from the foundation wall. Tied all roof downspouts into solid 4-inch SDR-35 PVC lines discharging to daylight.', 'https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=1200&q=80')" class="group border border-ink bg-paper cursor-pointer flex flex-col justify-between transition hover:-translate-y-1 hover:shadow-[6px_6px_0px_0px_#111111]">
+                    <div>
+                        <div class="p-3 border-b border-ink flex justify-between items-center font-mono text-[11px] bg-concrete">
+                            <span class="font-bold">PLATE 002 // CIVIL & DRAINAGE</span>
+                            <span>Q4 2026</span>
+                        </div>
+                        <div class="aspect-[4/3] overflow-hidden border-b border-ink bg-ink">
+                            <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=800&q=80" alt="Foundation drainage and grading" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-bold text-lg uppercase tracking-tight mb-2">Sub-Surface Stormwater & Grading</h3>
+                            <p class="text-sm text-neutral-700 leading-relaxed">
+                                Positive perimeter grading and buried rigid downspout piping engineered to eliminate hydrostatic pressure on the foundation.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-5 py-3 border-t border-ink font-mono text-xs flex justify-between items-center group-hover:bg-ink group-hover:text-paper transition">
+                        <span>INSPECT FIELD PLATE</span>
+                        <span>&rarr;</span>
+                    </div>
+                </article>
+
+                <!-- Card 03 -->
+                <article onclick="openModal('LOG 003 // STRUCTURAL FRAMING', 'Q4 2026 — Interior load-bearing modifications and structural framing execution, opening up sightlines and creating a dedicated 14x35 dual-zone workspace.', 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80')" class="group border border-ink bg-paper cursor-pointer flex flex-col justify-between transition hover:-translate-y-1 hover:shadow-[6px_6px_0px_0px_#111111]">
+                    <div>
+                        <div class="p-3 border-b border-ink flex justify-between items-center font-mono text-[11px] bg-concrete">
+                            <span class="font-bold">PLATE 003 // STRUCTURAL</span>
+                            <span>Q4 2026</span>
+                        </div>
+                        <div class="aspect-[4/3] overflow-hidden border-b border-ink bg-ink">
+                            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80" alt="Interior framing" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-bold text-lg uppercase tracking-tight mb-2">Structural Framing & Spatial Layout</h3>
+                            <p class="text-sm text-neutral-700 leading-relaxed">
+                                Engineered header installations, subfloor reinforcement, and rough framing for modern living and remote work infrastructure.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-5 py-3 border-t border-ink font-mono text-xs flex justify-between items-center group-hover:bg-ink group-hover:text-paper transition">
+                        <span>INSPECT FIELD PLATE</span>
+                        <span>&rarr;</span>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 04: About Me & Freedom of Information Manifesto -->
+    <section id="manifesto" class="py-16 sm:py-24 bg-paper">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="border border-ink bg-white grid grid-cols-1 lg:grid-cols-12">
+                
+                <!-- Left Column: Builder Bio -->
+                <div class="lg:col-span-5 p-8 sm:p-12 border-b lg:border-b-0 lg:border-r border-ink bg-ink text-paper flex flex-col justify-between">
+                    <div>
+                        <span class="font-mono text-xs uppercase tracking-widest text-safety font-bold">[04] ABOUT THE BUILDER</span>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold uppercase tracking-tight mt-2 mb-6">
+                            CODY WOODARD
+                        </h2>
+                        <p class="text-neutral-300 text-sm leading-relaxed mb-6">
+                            I’m a Northern Virginia land development manager, licensed Virginia Class A Residential Contractor, and founder of <strong class="text-white">Woodard Construction LLC</strong>.
+                        </p>
+                        <p class="text-neutral-300 text-sm leading-relaxed mb-6">
+                            With a background spanning financial auditing, accounting, and horizontal civil construction across Louisiana, Texas, and Northern Virginia, I approach residential building from first principles: get the dirt, drainage, utilities, and structure right before worrying about paint colors.
+                        </p>
+                    </div>
+
+                    <div class="pt-6 border-t border-neutral-800 font-mono text-xs space-y-2 text-neutral-400">
+                        <div class="flex justify-between">
+                            <span>ENTITY:</span>
+                            <span class="text-white">WOODARD CONSTRUCTION LLC</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>BASE:</span>
+                            <span class="text-white">VIENNA / DUNN LORING, VA</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>LICENSE:</span>
+                            <span class="text-white">VIRGINIA CLASS A CONTRACTOR</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Why I'm Publishing Everything (Freedom of Information & Education) -->
+                <div class="lg:col-span-7 p-8 sm:p-12 flex flex-col justify-between">
+                    <div>
+                        <div class="inline-block font-mono text-xs uppercase bg-concrete border border-ink px-3 py-1 mb-4 font-bold">
+                            MANIFESTO // FREEDOM OF INFORMATION & EDUCATION
+                        </div>
+                        <h3 class="text-2xl sm:text-3xl font-extrabold uppercase tracking-tight mb-6">
+                            WHY I AM PUBLISHING THE BLUEPRINT, THE NUMBERS, AND THE MISTAKES
+                        </h3>
+                        
+                        <div class="space-y-4 text-neutral-800 leading-relaxed text-base">
+                            <p>
+                                Residential construction and real estate development have historically operated behind a curtain of gatekept pricing, vague contractor estimates, and "trade secrets." If you are a homeowner trying to understand why a utility trench costs what it does, or an aspiring small-scale builder trying to pull your first permit in Fairfax County, reliable ground-truth data is almost impossible to find.
+                            </p>
+                            <p>
+                                <strong class="font-bold text-ink">I built this site for one reason: freedom of information and practical education.</strong>
+                            </p>
+                            <p>
+                                By documenting every phase of <span class="font-mono text-sm bg-concrete px-1.5 py-0.5 border border-ink">2531 Villanova Dr.</span> in public—including real budget line items, municipal permitting hurdles, civil engineering details, and field photos—I want to create an open-source reference manual that anyone can study, audit, and learn from.
+                            </p>
+                        </div>
+
+                        <!-- Three Core Pillars -->
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8 pt-8 border-t border-ink font-mono text-xs">
+                            <div class="p-4 bg-paper border border-ink">
+                                <span class="text-safety font-bold block mb-1">01 // NO GATEKEEPING</span>
+                                <span class="text-neutral-700">Real unit costs and vendor scopes shared openly without paywalls or courses to sell.</span>
+                            </div>
+                            <div class="p-4 bg-paper border border-ink">
+                                <span class="text-safety font-bold block mb-1">02 // CIVIC LITERACY</span>
+                                <span class="text-neutral-700">Demystifying zoning ordinances, utility infrastructure, and local permitting mechanics.</span>
+                            </div>
+                            <div class="p-4 bg-paper border border-ink">
+                                <span class="text-safety font-bold block mb-1">03 // FIELD PROOF</span>
+                                <span class="text-neutral-700">Showing the unglamorous subsurface work that actually protects generational housing stock.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Direct Contact / Collaboration Bar -->
+                    <div class="mt-10 pt-6 border-t border-ink flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                        <div class="font-mono text-xs">
+                            <span class="block font-bold uppercase">QUESTIONS ABOUT THE BUILD OR NUMBERS?</span>
+                            <span class="text-neutral-600">Reach out directly—always happy to talk shop with fellow builders & neighbors.</span>
+                        </div>
+                        <a href="mailto:cody@woodardconstruction.example" class="font-mono text-xs uppercase font-bold bg-safety text-white px-5 py-3 border border-ink hover:bg-ink transition text-center">
+                            EMAIL CODY &rarr;
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-ink text-paper border-t border-ink py-10 font-mono text-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div>
+                <span class="font-bold">WOODARD CONSTRUCTION LLC</span> // VIENNA, VIRGINIA
+            </div>
+            <div class="text-neutral-400">
+                OPEN-SOURCE BUILD JOURNAL • 2531 VILLANOVA DR. • <span id="year"></span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal for Progress Photos -->
+    <div id="photo-modal" class="fixed inset-0 z-50 hidden bg-ink/90 backdrop-blur-xs flex items-center justify-center p-4">
+        <div class="bg-paper border-2 border-ink max-w-3xl w-full overflow-hidden shadow-2xl">
+            <div class="bg-ink text-paper px-5 py-3 flex justify-between items-center font-mono text-xs">
+                <span id="modal-title" class="font-bold uppercase tracking-wider">PLATE DETAILS</span>
+                <button onclick="closeModal()" class="text-paper hover:text-safety font-bold text-base cursor-pointer">[X] CLOSE</button>
+            </div>
+            <div class="bg-ink">
+                <img id="modal-img" src="" alt="Field inspection photo" class="w-full max-h-[60vh] object-contain mx-auto">
+            </div>
+            <div class="p-6 font-sans text-sm text-ink leading-relaxed bg-paper border-t border-ink">
+                <p id="modal-desc"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Minimal Vanilla JS for Filtering & Lightbox -->
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Budget Division Filtering
+        function filterBudget(category) {
+            const rows = document.querySelectorAll('.budget-row');
+            const buttons = document.querySelectorAll('.budget-filter-btn');
+
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-ink', 'text-paper');
+                btn.classList.add('bg-paper', 'text-ink');
+            });
+            event.target.classList.remove('bg-paper', 'text-ink');
+            event.target.classList.add('bg-ink', 'text-paper');
+
+            rows.forEach(row => {
+                if (category === 'ALL' || row.dataset.category === category) {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+        }
+
+        // Photo Lightbox Modal
+        function openModal(title, desc, imgSrc) {
+            document.getElementById('modal-title').textContent = title;
+            document.getElementById('modal-desc').textContent = desc;
+            document.getElementById('modal-img').src = imgSrc;
+            document.getElementById('photo-modal').classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('photo-modal').classList.add('hidden');
+        }
+
+        // Close modal on Escape key or backdrop click
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeModal();
+        });
+        document.getElementById('photo-modal').addEventListener('click', (e) => {
+            if (e.target.id === 'photo-modal') closeModal();
+        });
+    </script>
+</body>
+</html>
